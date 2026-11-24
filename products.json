@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "min_feedback_percent": 98.0,
+    "min_feedback_score": 10000
+  },
+  "products": [
+    {
+      "name": "MacBook Pro 13 2019 Touch Bar 256GB",
+      "query": "macbook pro 13 2019 touch bar 256gb",
+      "min_price": 150,
+      "max_price": 365,
+      "must_match": ["macbook\\s?pro", "(?<!\\d)256\\s?gb", "2019|a2159|a1989"],
+      "exclude": []
+    },
+    {
+      "name": "MacBook Pro 13.3 M1 8GB 512GB",
+      "query": "macbook pro 13 m1 8gb 512gb",
+      "min_price": 250,
+      "max_price": 500,
+      "must_match": ["macbook\\s?pro", "\\bm1\\b", "(?<!\\d)8\\s?gb", "(?<!\\d)512\\s?gb"],
+      "exclude": []
+    }
+  ],
+  "global_exclude": [
+    "for parts", "parts only", "parts or", "repair", "icloud lock", "locked",
+    "activation lock", "mdm", "broken", "crack", "damage", "not working",
+    "no power", "dead", "faulty", "defective", "as is", "as-is", "bad ",
+    "water", "liquid", "read me", "read desc", "see desc", "please read",
+    "untested", "not tested", "won't", "wont", "does not", "doesn't",
+    "doesnt", "issue", "problem", "flaw", "glitch", "bent", "dent",
+    "swollen", "stuck", "no os", "bios", "passcode", "password",
+    "firmware", "blank screen", "black screen", "no display", "missing"
+  ],
+  "description_exclude_regex": [
+    "\\bfor parts\\b", "\\bparts only\\b", "\\bparts or repair\\b",
+    "\\b(icloud|activation|mdm|bios|firmware|efi|passcode)[ -]?(is )?locked\\b",
+    "\\bnot working\\b", "\\bdoes ?n[o']?t work\\b",
+    "\\bwon'?t (turn|power|boot|charge|start)\\b", "\\bno power\\b",
+    "\\bcracked\\b", "\\bwater damage\\b", "\\bliquid damage\\b",
+    "\\bdefective\\b", "\\bfaulty\\b", "\\bbroken\\b", "\\bdead\\b",
+    "\\bneeds? (a )?(repair|service|new battery|new screen)\\b"
+  ]
+}
